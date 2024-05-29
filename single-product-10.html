@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Teclusive</title>
+        <script src="https://kit.fontawesome.com/71d9810147.js"></script>
+        <script src="Script.js" async></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="cart.js" async></script>
+
+    </head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="Images/Logo/Untitled.png" width="150" height="150" class="Logo" onclick="window.location.href='index.html';"></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signin.html">Sign-In</a></li>
+                <div class="shopbag">
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+                </div>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="product-info" class="info-padding">
+        <div class="first-image-show">
+            <img class="shop-item" src="Images/Products/2070-1.jpg"width="100%" id="first-image">
+        
+        <div class="sub-image-group">
+            <div class="sub-image-column">
+                <img src="Images/Products/2070-2.jpg" width="100%" class="sub-image">
+                </div>
+
+        <div class="sub-image-column">
+            <img src="Images/Products/2070-3.jpg" width="100%" class="sub-image">
+                </div>
+
+        <div class="sub-image-column">
+            <img src="Images/Products/2070-4.jpg" width="100%" class="sub-image">
+                </div>
+
+        <div class="sub-image-column">
+            <img src="Images/Products/2070-1.jpg" width="100%" class="sub-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-details">
+          <h1>NVIDIA</h1> 
+          <h2 class="shop-item-title">MSI GAMING GeForce RTX 2070 8GB GDRR6 256-bit HDMI/DP/USB Ray Tracing Turing Architecture HDCP Graphics Card (RTX 2070 DUKE 8G OC)</h2>
+          <h3 class="item-price">$299</h3>
+        <button><a class="addcart" href="#">Add to Cart</a></button>
+          <h4>Specifications</h4>
+        <span>MSI GeForce RTX 2070 DUKE graphics card can withstand the load when battle kicks in high gear. With a sturdy backplate at the bottom and an aggressive thermal system at top, the GeForce RTX 2070 GPU can run relentlessly to put gamers right into the adrenaline-pumping in-game scenes in today's AAA or VR titles. Various utilities put you in the driver's seat in monitoring metrics and tuning for overclocking. The graphics card also looks like a bad ass with bold design and sharp angles. It will never look out of place inside your battlestation.</span>
+        </div>
+    </section>
+
+    <section id="updates">
+        <div class="new">
+            <h1>Stay Up-to-date with our products</h1>
+            <p>Get E-mail updates about new arrivals in store</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="E-mail address">
+                <button>Sign Up</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <footer class="footer">
+            <div class="foot">
+                <img class="logo" src="Images/Logo/Untitled.png" width 200 height="200" onclick="window.location.href='index.html';">
+                <h1>Contact Us</h1>
+                <br>
+                <p><b>Address:</b> Brian Statham Way, Old Trafford, Stretford, Manchester M16 0PU</p>
+                <br>
+                <p><b>Phone:</b> +447551234567</p>
+                <br>
+                <p><b>Timings:</b> 09:00 - 18:00. Monday to Friday </p>
+                <br>
+            </div>
+
+                <div class="about">
+                    <h1>About us</h1>
+                    <br><br>
+                    <a href="#">About us</a>
+                    <br><br>
+                    <a href="#">Delivery Information</a>
+                    <br><br>
+                    <a href="#">Our Team</a>
+                    <br><br>
+                    <a href="#">Terms and Conditions</a>
+
+                </div>
+
+                <div class="account">
+                    <h1>Account</h1>
+                    <br><br>
+                    <a href="#">Sign Up</a>
+                    <br><br>
+                    <a href="#">Need Help</a>
+                    <br><br>
+                    <a href="#">Customer Support</a>
+                </div>
+                <div class="socials">
+                    <h1>Follow Us</h1>
+                    <i class="fab fa-facebook-f fa-6x" onclick="window.location.href='https://www.facebook.com/';"></i>
+                    <br>
+                    <i class="fab fa-instagram fa-6x" onclick="window.location.href='https://www.instagram.com/';"></i>
+                    <br>
+                    <i class="fab fa-whatsapp fa-6x" onclick="window.location.href='https://web.whatsapp.com/';"></i>
+                    <br>
+                </div>
+        </footer>
+
+    <script>
+        var firstimage = document.getElementById("first-image");
+        var subimage = document.getElementsByClassName("sub-image")
+
+        subimage[0].onclick = function (){
+            firstimage.src = subimage[0].src;
+        } 
+
+        subimage[1].onclick = function (){
+            firstimage.src = subimage[1].src;
+        }
+
+        subimage[2].onclick = function (){
+            firstimage.src = subimage[2].src;
+        }
+
+        subimage[3].onclick = function (){
+            firstimage.src = subimage[3].src;
+        }
+    </script>
+
+</body>
+</html>
