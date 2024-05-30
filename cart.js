@@ -53,7 +53,7 @@ function removeCartItem(event) {
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
 }
-
+/*CART EMPTY VALUE 0*/
 function quantityChanged(event) {
     var input = event.target
     if (isNaN(input.value) || input.value <=0) {
