@@ -562,22 +562,6 @@ a:hover {
   font-size: 1.75em;
 }
 
-/*SINGLE PODUCT*/
-#product-info {
-  display: flex;
-  flex-direction: column;
-}
-
-#product-info .first-image-show{
-  margin: 30px 30px;
-}
-
-#about-sec {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /*Media Section*/
 
 @media (max-width:799px) {
@@ -699,4 +683,22 @@ html, body {
   display: flex;
   flex-direction: row;
 }
+
+/*SINGLE PRODUCT*/
+#product-info {
+  display: flex;
+  flex-direction: column;
 }
+
+#product-info .first-image-show{
+  margin: 30px 30px;
+}
+
+#about-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
+
